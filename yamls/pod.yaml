@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kube-ez
+spec:
+  serviceAccount: kube-ez
+  containers:
+    - name: sibintek
+      image: SiSiuSpacecowboy/sibintek:latest
+      ports:
+        - containerPort: 8080
